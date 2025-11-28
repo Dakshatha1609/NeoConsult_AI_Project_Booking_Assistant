@@ -1,0 +1,3 @@
+# Ignore secrets and database
+.streamlit/secrets.toml
+bookings.db
