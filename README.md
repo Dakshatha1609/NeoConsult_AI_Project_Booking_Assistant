@@ -1,4 +1,5 @@
 Project Title: NeoConsult - AI Project Booking Assistant
+Streamlit App - https://neoconsultaiprojectbookingassistant-hnfshsukpsvbv36phjks9r.streamlit.app/
 
 Domain:
 AI-powered Consultation Booking System for NeoStats / NeoConsult (Data & AI Solutions)
