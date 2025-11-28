@@ -1,23 +1,15 @@
-Project Title:
-
-NeoConsult – AI Project Booking Assistant
+Project Title: NeoConsult - AI Project Booking Assistant
 
 Domain:
-
 AI-powered Consultation Booking System for NeoStats / NeoConsult (Data & AI Solutions)
 
-Objective
+Objective:
 
 To design and implement an AI-powered assistant that:
-
 Handles document-based Q&A (RAG)
-
 Books project consultations
-
 Stores bookings in a database
-
 Sends confirmation emails
-
 Provides an admin dashboard to view all bookings
 
 Features Implemented:
@@ -47,7 +39,7 @@ Database: SQLite
 AI Model: OpenAI GPT-4o-mini (for RAG and chat logic)
 Embedding / Retrieval: FAISS / sentence-transformers
 Email Service: Gmail SMTP (App Password Auth)
-Cloud Deployment : Streamlit Cloud / Render
+Cloud Deployment : Streamlit Cloud 
 
 Project Structure:
 
@@ -93,10 +85,23 @@ Then upload the NeoConsult brochure (PDF) and start chatting or booking consulta
 
 Deployment:
 
-Option 1: Deploy via Streamlit Cloud
-Option 2: Use Render
+Live Demo: https://neoconsultaiprojectbookingassistant-hnfshsukpsvbv36phjks9r.streamlit.app/
 
-Add your credentials in .streamlit/secrets.toml:
+The application has been deployed successfully on Streamlit Cloud, enabling interactive access to all core features including PDF-based Q&A, AI-driven booking flow, and the Admin Dashboard.
+
+Deployment Options:
+
+Option 1 — Streamlit Cloud (Recommended)
+The app can be deployed directly on Streamlit Cloud by connecting the GitHub repository and setting the main entry point as app.py.
+
+Option 2 — Render
+Alternatively, the app can be hosted on Render using the same project structure and startup command:
+streamlit run app.py
+
+Environment Configuration:
+
+Sensitive credentials are securely managed through Streamlit Secrets Management.
+Add the following entries in .streamlit/secrets.toml or in Streamlit Cloud’s “Edit Secrets” panel:
 
 OPENAI_API_KEY = "your_key"
 EMAIL_HOST = "smtp.gmail.com"
@@ -104,9 +109,25 @@ EMAIL_PORT = "587"
 EMAIL_USER = "your_email@gmail.com"
 EMAIL_PASSWORD = "your_app_password"
 
-Summary:
 
-This project demonstrates an end-to-end AI-powered booking system integrating:
+Note: These credentials should not be committed to the repository for security reasons. They are configured only in the deployment environment.
+
+Access Instructions:
+
+Open the live demo link above.
+Upload the company brochure (neoconsult_brochure.pdf).
+Ask document-related queries or initiate a project consultation booking.
+view and manage bookings via the Admin Dashboard in the sidebar.
+
+Deployment Summary:
+
+Hosting Platform: Streamlit Cloud
+Frontend: Streamlit
+Backend: Python + SQLite
+Secrets Management: Streamlit Cloud Secrets
+Status: Successfully deployed and accessible online
+
+Summary - This project demonstrates an end-to-end AI-powered booking system integrating:
 
 RAG-based document querying
 Dynamic conversation handling
