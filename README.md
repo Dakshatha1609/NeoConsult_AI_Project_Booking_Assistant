@@ -91,6 +91,27 @@ Live Demo: https://neoconsultaiprojectbookingassistant-hnfshsukpsvbv36phjks9r.st
 
 The application has been deployed successfully on Streamlit Cloud, enabling interactive access to all core features including PDF-based Q&A, AI-driven booking flow, and the Admin Dashboard.
 
+Application Preview:
+
+Below are a few snapshots of the deployed **NeoConsult – AI Project Booking Assistant** showcasing key functionalities.
+
+User Chat Interface:
+The assistant allows users to upload NeoConsult service PDFs, ask questions using natural language, and interact conversationally for project consultation bookings.
+
+![User Chat Interface](docs/User_Chat_Interface.png)
+
+Automated Consultation Flow:
+Once the user completes the multi-turn conversation, all booking details (name, email, date, project type, etc.) are collected and stored securely in the database.
+
+![Booking Confirmation](docs/Booking_Confirmation.png)
+
+
+Admin Dashboard:
+Admins can view and filter all bookings through a dedicated dashboard integrated with the SQLite database.
+
+![Admin Dashboard](docs/Admin_Dashboard.png)
+
+
 Deployment Options:
 
 Option 1 — Streamlit Cloud (Recommended)
